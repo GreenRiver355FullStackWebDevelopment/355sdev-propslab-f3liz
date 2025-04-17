@@ -8,7 +8,7 @@ const Recipe = ({ recipe:{name, ingredients, instructions, optionalGlaze}}) => {
             <Typography variant='h2' sx={{ fontWeight: 'bold', color: 'orange'}}>{name} <DinnerDiningIcon fontSize='large'/></Typography>
             <Typography variant='body1' sx={{ fontWeight: 'bold', color: 'yellow'}}><EggIcon/> Ingredients: {ingredients}</Typography>
             <Typography variant='body1' sx={{ fontWeight: 'bold'}}>Instructions: {instructions}</Typography>
-            {optionalGlaze && ( // to include glaze
+            {optionalGlaze && ( // to include glaze, had to look this up
                 <div>
                     <Typography variant='h5' sx={{ fontWeight:'bold', color: 'orange'}}>Optional Glaze: {optionalGlaze.name}</Typography>
 
